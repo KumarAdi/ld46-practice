@@ -7,6 +7,8 @@ class Main extends hxd.App {
     var curLevel: Level;
 
     override function init() {
+        hxd.Res.initEmbed();
+
         curLevel = new Kneading();
         curLevel.init();
     }
